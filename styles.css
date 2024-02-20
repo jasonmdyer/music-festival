@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Scribble&display=swap');
+
+* {
+    font-family: Barlow;
+    background: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* NAV START */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.logo {
+    font-family: Rubik Scribble;
+    font-size: 15px;
+    color: white;
+    transition: all 0.5s ease 0s;
+    background: -webkit-linear-gradient(#fd2fc0, #8800ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo:hover {
+    transform: scale(2);
+}
+
+li, a, button {
+    font-weight: 700;
+    font-size: 16px;
+    color: white;    
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.5s ease 0s;
+}
+
+.nav-links li a:hover {
+    letter-spacing: 5px;
+    color: #bb00ff;
+}
+
+.buy-tickets {
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    background-color: #bb00ff;
+    margin-right: 20px;
+}
+
+.buy-tickets:hover {
+    transform:scale(1.3);
+    background: -webkit-linear-gradient(#fd2fc0, #bb00ff);
+}
+
+/* NAV END */
+
+/* LINEUP START */
+
+.lineup {
+    display: block;
+}
+
+.festival-lineup {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+
+ul, li, p {
+    list-style-type: none;
+    text-align: center;
+    background: transparent;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#dropdown-products {
+    display: none;
+}
+
+.main-event {
+    font-size: 70px;
+    background: linear-gradient(to right,#ae8625,#f7ef8a, #d2ac47, #edc967);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.friday {
+    position: absolute;
+    top: 350px;
+    left: 515px;
+    align-items: center;
+    color: white;
+    font-family: Barlow;
+    background: none;
+    font-size: 60px;
+    font-weight: 800;
+    transition: all 1s ease 0s;
+}
+
+.friday:hover {
+    transform: scale(1.2);
+}
+
+.friday:hover #dropdown-products {
+    display: block;
+}
+
+.saturday {
+    position: absolute;
+    top: 770px;
+    left: 465px;
+    align-items: center;
+    color: white;
+    font-family: Barlow;
+    background: none;
+    font-size: 60px;
+    font-weight: 800;
+    transition: all 1s ease 0s;
+}
+
+.saturday:hover {
+    transform: scale(1.2);
+}
+
+.saturday:hover #dropdown-products {
+    display: block;
+}
+
+.sunday {
+    position: absolute;
+    top: 1170px;
+    left: 500px;
+    align-items: center;
+    color: white;
+    font-family: Barlow;
+    background: none;
+    font-size: 60px;
+    font-weight: 800;
+    transition: all 1s ease 0s;
+}
+
+.sunday:hover {
+    transform: scale(1.2);
+}
+
+.sunday:hover #dropdown-products {
+    display: block;
+}
+
+/* LINEUP END */
+
+/* PRICING START */
+
+.special-pricing-text {
+    color: white;
+    font-size: 60px;
+    transition: all 1s ease 0s;
+    font-weight: 600;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.special-pricing-text:hover {
+    letter-spacing: 7px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 500px;
+    text-align: center;
+}
+
+.packages {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.three-day-ga {
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #000000;
+    height: 300px;
+    width: 400px;
+    transition: all 1s ease 0s;
+}
+
+.three-day-gold {
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #000000;
+    width: 400px;
+    transition: all 1s ease 0s;
+}
+
+.three-day-platinum {
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #000000;
+    width: 400px;
+    transition: all 1s ease 0s;
+}
+
+.three-day-ga:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0px 25px 10px #bb00ff;
+}
+
+.three-day-gold:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0px 25px 10px #ffd152;
+
+}
+
+.three-day-platinum:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0px 25px 10px #fdfff3;
+}
+
+.three-day-ga-text,
+.three-day-gold-text,
+.three-day-platinum-text {
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    padding-top: 20px;
+}
+
+.ga-price {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    background: linear-gradient(to right,#ba0dff, #8400ff, #ea00ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.gold-price {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    background: linear-gradient(to right,#ae8625,#f7ef8a, #d2ac47, #edc967);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.platinum-price {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    background: linear-gradient(to right,#5e5e5e,#9f9f9f, #eeeeee, #393939);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.fees {
+    color: white;
+}
+
+.buy-now {
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: -webkit-linear-gradient(#fd2fc0, #bb00ff);
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.learn-more {
+    font-size: 25px;
+    color: white;
+    margin-top: 80px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: none;
+    transition: all 1s ease 0s;
+}
+
+.learn-more2 {
+    font-size: 25px;
+    color: white;
+    margin-top: 80px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 360px;
+    margin-right: 360px;
+    text-transform: none;
+    transition: all 1s ease 0s;
+}
+
+.learn-more3 {
+    font-size: 25px;
+    color: white;
+    margin-top: 80px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: none;
+    transition: all 1s ease 0s;
+}
+
+.learn-more2:hover {
+color: black;
+}
+
+.learn-more:hover {
+color: black;
+}
+
+.learn-more3:hover {
+    color: black;
+}
+
+/* PRICING END */
