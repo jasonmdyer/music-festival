@@ -1,1 +1,1 @@
-# music-festival
+# Music Festival
