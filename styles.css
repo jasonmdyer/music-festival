@@ -161,6 +161,7 @@ ul, li, p {
 
 .saturday:hover #dropdown-products {
     display: block;
+    inset: 2em 50px 20px;
 }
 
 .sunday {
@@ -355,6 +356,51 @@ color: black;
 
 /* PRICING END */
 
+/* SHOWCASE START */
+
+.showcase {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.showcase-image img{
+    border-radius: 25px;
+    width: 50%;
+    transition: all 1s ease 0s;
+}
+
+.showcase-image img:hover {
+    transform: scale(1.2);
+}
+
+
+.discover-artists {
+    margin-top: 50px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 300px;
+}
+
+.discover-artists2 {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 45px;
+}
+
+/* SHOWCASE END */
+
+/* PLAYLIST START */
+
+.playlist {
+    margin-left: 145px;
+}
+
+/* PLAYLIST END */
+
 /* FOOTER START */
 
 .partners {
@@ -417,6 +463,11 @@ color: black;
     margin-bottom: 15px;
     text-transform: uppercase;
     font-size: 25px;
+    transition: all 1s ease 0s;
+  }
+
+  .column-1 a:hover {
+    color: black;
   }
   
   form input {
@@ -428,7 +479,7 @@ color: black;
     margin-bottom: 40px;
     outline: none;
     border: none;
-    background: white;;
+    background: white;
   }
   
   .subscribe-now {
