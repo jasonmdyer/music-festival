@@ -595,6 +595,7 @@ input:focus::placeholder {
         height: 50%;
         margin-left: 40px;
         margin-top: 140px;
+        margin-bottom: 200px;
     }
 
     .partners {
