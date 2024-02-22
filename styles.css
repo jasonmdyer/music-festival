@@ -758,11 +758,11 @@ input:focus::placeholder {
 @media screen and (min-width: 1025px) {
 
     .logo:hover {
-        transform: none;
+        transform: scale(1.1);
     }
 
     .nav-links li a:hover {
-        letter-spacing: 1px;
+        letter-spacing: 3px;
     }
 
     .special-pricing-text {
@@ -770,11 +770,12 @@ input:focus::placeholder {
     }
 
     .three-day-ga, .three-day-gold, .three-day-platinum {
-        width: 250px;
+        width: 350px;
+        height: 280px;
     }
 
     .packages {
-        gap: 20px;
+        gap: -10px;
     }
 
     .playlist {
@@ -783,5 +784,6 @@ input:focus::placeholder {
 
     .partner-logos {
         margin-left: 15%;
+        
     }
 }
