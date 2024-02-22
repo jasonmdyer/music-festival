@@ -4,11 +4,11 @@
 
 * {
     font-family: Barlow;
-    background: black;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: #000000;
 }
 
 /* NAV START */
@@ -49,6 +49,7 @@ li, a, button {
     list-style: none;
     text-transform: uppercase;
     margin-right: 10px;
+    flex-basis: 5%;
 }
 
 .nav-links li {
@@ -77,7 +78,6 @@ li, a, button {
     transition: all 0.5s ease 0s;
     cursor: pointer;
     background-color: #bb00ff;
-    margin-right: 20px;
 }
 
 .buy-tickets:hover {
@@ -89,22 +89,27 @@ li, a, button {
 /* LINEUP START */
 
 .lineup {
-    display: block;
+    background-image: url("https://i.ibb.co/W5RVPmX/fallen-islands-fest.jpg");
+    width: 40%;
+    height: 800px;
+    background-repeat: repeat-y;
+    text-align: center;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
+
 
 .festival-lineup {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 200px;
-    margin-bottom: 100px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 ul, li, p {
     list-style-type: none;
-    text-align: center;
     background: transparent;
-    font-size: 20px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -113,74 +118,31 @@ ul, li, p {
 }
 
 .main-event {
-    font-size: 70px;
+    font-size: 40px;
     background: linear-gradient(to right,#ae8625,#f7ef8a, #d2ac47, #edc967);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
-
-.friday {
-    position: absolute;
-    top: 350px;
-    left: 515px;
+.days {
+    height: 30%;
+    width: 100%;
     align-items: center;
     color: white;
     font-family: Barlow;
     background: none;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 800;
     transition: all 1s ease 0s;
+    margin-top: 5%;
+
 }
 
-.friday:hover {
-    transform: scale(1.2);
+.days:hover {
+    transform: scale(1.1);
 }
 
-.friday:hover #dropdown-products {
-    display: block;
-}
-
-.saturday {
-    position: absolute;
-    top: 770px;
-    left: 465px;
-    align-items: center;
-    color: white;
-    font-family: Barlow;
-    background: none;
-    font-size: 60px;
-    font-weight: 800;
-    transition: all 1s ease 0s;
-}
-
-.saturday:hover {
-    transform: scale(1.2);
-}
-
-.saturday:hover #dropdown-products {
-    display: block;
-    inset: 2em 50px 20px;
-}
-
-.sunday {
-    position: absolute;
-    top: 1170px;
-    left: 500px;
-    align-items: center;
-    color: white;
-    font-family: Barlow;
-    background: none;
-    font-size: 60px;
-    font-weight: 800;
-    transition: all 1s ease 0s;
-}
-
-.sunday:hover {
-    transform: scale(1.2);
-}
-
-.sunday:hover #dropdown-products {
+.days:hover #dropdown-products {
     display: block;
 }
 
@@ -193,8 +155,10 @@ ul, li, p {
     font-size: 60px;
     transition: all 1s ease 0s;
     font-weight: 600;
-    margin-bottom: 80px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     cursor: pointer;
+    text-align: center;
 }
 
 .special-pricing-text:hover {
@@ -309,50 +273,6 @@ ul, li, p {
     margin-top: 20px;
 }
 
-.learn-more {
-    font-size: 25px;
-    color: white;
-    margin-top: 60px;
-    cursor: pointer;
-    display: inline-block;
-    text-transform: none;
-    transition: all 1s ease 0s;
-}
-
-.learn-more2 {
-    font-size: 25px;
-    color: white;
-    margin-top: 60px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: 360px;
-    margin-right: 360px;
-    text-transform: none;
-    transition: all 1s ease 0s;
-}
-
-.learn-more3 {
-    font-size: 25px;
-    color: white;
-    margin-top: 60px;
-    cursor: pointer;
-    display: inline-block;
-    text-transform: none;
-    transition: all 1s ease 0s;
-}
-
-.learn-more2:hover {
-color: black;
-}
-
-.learn-more:hover {
-color: black;
-}
-
-.learn-more3:hover {
-    color: black;
-}
-
 /* PRICING END */
 
 /* SHOWCASE START */
@@ -418,8 +338,8 @@ color: black;
     font-size: 60px;
     transition: all 1s ease 0s;
     font-weight: 600;
-    margin-top: 100px;
-    margin-bottom: 60px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     text-align: center;
 }
 
@@ -428,26 +348,24 @@ color: black;
 }
 
 .partner-logos {
-    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
     color: white;
+    display: flex;    
+    width: 80%;
+    height: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .partner-logo {
-    padding-left: 50px;
     cursor: pointer;
+    flex-basis: 20%;
+    height: 100px;
 }
 
-.liquid-death {
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.power-106 {
-    margin-right: 30px;
-    margin-left: -40px;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
 
 .footer {
     margin-top: 1px;
@@ -547,3 +465,323 @@ input:focus::placeholder {
 }
 
 /* FOOTER END */
+
+
+/* MEDIA QUERY START */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 1px;
+        margin-right: 10px;
+        width: 100%;
+    }
+
+    .logo:hover {
+        transform: none;
+    }
+
+    .nav-links li a:hover {
+        letter-spacing: 0px;
+    }
+
+    li,
+    a,
+    button {
+        font-size: 12px;
+    }
+
+    ul,
+    .nav-links {
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .lineup {
+        width: 100%;
+    }
+
+    li p {
+        font-size: 15px;
+    }
+
+    .buy-tickets {
+        padding: 0;
+        margin-right: 10px;
+        font-size: 10px;
+    }
+
+    .buy-tickets:hover {
+        transform: none;
+    }
+
+    .special-pricing-text {
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-left: 15px;
+    }
+
+    .special-pricing-text:hover {
+        letter-spacing: 0px;
+    }
+
+    .three-day-ga {
+        width: 100px;
+        height: 200px;
+    }
+
+    .three-day-gold {
+        width: 100px;
+    }
+
+    .three-day-platinum {
+        width: 100px;
+    }
+
+    .three-day-ga:hover, .three-day-gold:hover, .three-day-platinum:hover {
+        box-shadow: none;
+        transform: scale(1);
+    }
+
+    .three-day-ga-text, .three-day-gold-text, .three-day-platinum-text {
+        font-size: 8px;
+    }
+
+    .ga-price, .gold-price, .platinum-price {
+        font-size: 25px;
+    }
+
+    .fees {
+        font-size: 10px;
+    }
+
+    .container {
+        height: 120px;
+        width: 100%;
+    }
+    .packages {
+        height: 200px;
+    }
+
+    .buy-now {
+        font-size: 10px;
+    }
+
+    .showcase {
+        height: 100px;
+    }
+
+    .showcase-image img {
+        height: 220px;
+        width: 80%;
+    }
+
+    .showcase-image:hover {
+        transform: none;
+    }
+
+    .discover-artists {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .discover-artists2 {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .playlist {
+        width: 80%;
+        height: 50%;
+        margin-left: 40px;
+        margin-top: 140px;
+    }
+
+    .partners {
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+    
+    .partner-logos {
+        margin-left: 50px
+    }
+
+    .partner-logo img {
+        width: 50px;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    .column-1 a{
+        width: 100px;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .column-2 {
+        width: 200px;
+    }
+
+    .stay-tuned {
+        font-size: 20px;
+    }
+
+    .stay-tuned2 {
+        font-size: 9px;
+    }
+
+    input::placeholder {
+        font-size: 10px;
+    }
+    .email-address {
+        width: 144px;
+        margin-top: 2px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .logo {
+        font-size: 10px;;
+    }
+
+    .logo:hover {
+        transform: none;
+    }
+
+    ul li a {
+        font-size: 10px;
+    }
+
+    .buy-tickets{
+        font-size: 10px;
+    }
+
+    .lineup {
+        width: 50%;
+    }
+
+    .special-pricing-text {
+        font-size: 25px;
+    }
+
+    .special-pricing-text {
+        letter-spacing: 2px;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+
+    .packages {
+        gap: 30px;
+    }
+
+    .three-day-ga, .three-day-gold, .three-day-platinum {
+        width: 200px;
+    }
+
+    .three-day-ga:hover {
+        box-shadow: 0 0px 15px 5px #bb00ff;
+    }
+    
+    .three-day-gold:hover {
+        box-shadow: 0 0px 15px 5px #ffd152;
+    }
+
+    .three-day-platinum:hover {
+        box-shadow: 0 0px 15px 5px #fdfff3;
+    }
+
+    .ga-price, .gold-price, .platinum-price {
+        font-size: 50px;
+    }
+
+    .discover-artists2 {
+        font-size: 12px;
+    }
+
+    .showcase {
+        margin-bottom: 40px;
+    }
+
+    .playlist {
+        width: 80%;
+        padding-right: 130px;
+    }
+
+    .partners {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .partner-logos {
+        margin-left: 112px;
+    }
+
+    .footer {
+        margin-top: -80px;
+    }
+
+    .column-1 a {
+        font-size: 23px;
+        padding-right: 30px;
+    }
+
+    .column-2 {
+        width: 40%;
+    }
+
+    .stay-tuned {
+        font-size: 23px;
+    }
+
+    .stay-tuned2 {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .email-address {
+        margin-top: 2px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .logo:hover {
+        transform: none;
+    }
+
+    .nav-links li a:hover {
+        letter-spacing: 1px;
+    }
+
+    .special-pricing-text {
+        font-size: 40px;
+    }
+
+    .three-day-ga, .three-day-gold, .three-day-platinum {
+        width: 250px;
+    }
+
+    .packages {
+        gap: 20px;
+    }
+
+    .playlist {
+        margin-left: 10%;
+    }
+
+    .partner-logos {
+        margin-left: 15%;
+    }
+}
