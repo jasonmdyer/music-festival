@@ -91,7 +91,6 @@ li, a, button {
 .lineup {
     width: 40%;
     height: 800px;
-    background-repeat: repeat-y;
     text-align: center;
     margin: auto;
     padding-top: 1%;
